@@ -1,6 +1,7 @@
 name: Run Node.js Script and Commit Changes
 
 on:
+  workflow_dispatch:
   schedule:
     # Schedule to run at 3 AM UTC every day
     - cron: '0 3 * * *'
@@ -12,6 +13,11 @@ jobs:
     steps:
     - name: Check out repository code
       uses: actions/checkout@v2
+
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.5.1
+      with:
+        ssh-private-key: ${{ secrets.HEYBO_RUN }}
 
     - name: Use Node.js
       uses: actions/setup-node@v2
