@@ -3,8 +3,8 @@ name: Run Node.js Script and Commit Changes
 on:
   workflow_dispatch:
   schedule:
-    # Schedule to run at 3 AM UTC every day
-    - cron: '43 9 * * *'
+    # Schedule to run at 9 AM UTC every day
+    - cron: '43 17 * * *'
 
 jobs:
   execute_and_commit:
