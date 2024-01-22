@@ -33,7 +33,13 @@ const accounts = [
         username: "jh5",
         token: "75ad48b4e1eae63b8d9d4e5e0f576963e25a731d876b13bae9a79b467d300fdc",
         claimCount: 0
+    },
+    {
+        username: "brian",
+        token: "77aa401d254507852f731eb2a5c6439f5fce6694e4a38dbc407f0dfb4eb3870a",
+        claimCount: 0
     }
+    
 ];
 
 // Read the file

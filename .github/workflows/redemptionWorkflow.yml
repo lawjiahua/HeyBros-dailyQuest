@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Schedule to run at 9 AM UTC every day
-    - cron: '43 17 * * *'
+    - cron: '43 1 * * *'
 
 jobs:
   execute_and_commit:
