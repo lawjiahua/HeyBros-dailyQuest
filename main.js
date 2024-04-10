@@ -48,6 +48,11 @@ const accounts = [
     username: "FERTER",
     token: "75af1b542b4c24e2eab069b6ed4648e6076ed1dbde909963fe4cd50edc32c317",
     claimCount: 0
+  },
+  {
+    username: "eugenia",
+    token: "0203291b181494d92eaecb5babe3a453d605baca90702e45648306420d51592c", 
+    claimCount: 0 
   }
 ];
 
