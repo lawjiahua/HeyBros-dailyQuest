@@ -110,6 +110,9 @@ async function claimHeyboReward(username, token, orderNumber) {
       return 0;
     } else if (error.response.data == "Too many receipts scanned") {
       return 3;
+    } else if (error.response.data == "Transaction over 2 days ago will not be accepted.") {
+      orderNumber += 200;
+      return 0;
     } else {
       writeTofile(logfile, error.response.data);
     }
